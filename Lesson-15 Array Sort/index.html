@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+       //Array Sort
+       var fruits = ["Banana", "Orange", "Apple", "Mango"];
+       fruits.sort();        // Sorts the elements of fruits
+       document.write(fruits);
+    </script>
+    <br/>
+    <script>
+        //Reverse an array
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits.sort();        // First sort the elements of fruits
+        fruits.reverse();     // Then reverse the order of the elements
+        document.write(fruits);
+    </script>
+    <br/>
+    <script>
+        //numeric sort
+        var points = [40, 100, 1, 5, 25, 10];
+        //points.sort();
+        points.sort(function(a, b){return a - b});
+        document.write(points);
+
+//         By default, the sort() function sorts values as strings.
+
+// This works well for strings ("Apple" comes before "Banana").
+
+// However, if numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".
+
+// Because of this, the sort() method will produce incorrect result when sorting numbers.
+
+// You can fix this by providing a compare function:
+    </script>
+    <br/>
+    <script>
+        //sorting object arrays
+        var cars = [
+        {type:"Volvo", year:2016},
+        {type:"Saab", year:2001},
+        {type:"BMW", year:2010}
+        ];
+
+
+        cars.sort(function(a, b){return a.year - b.year});
+        document.write(cars);
+    </script>
+</html>
